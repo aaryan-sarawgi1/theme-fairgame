@@ -1,0 +1,37 @@
+/* === Blind Theme for FairGame === */
+
+/* Hide everything globally */
+body * {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Force chat container visible */
+.chat-window,
+.chat-container,
+#chat,
+#messages {
+  display: block !important;
+  visibility: visible !important;
+  background: #000 !important;
+  color: #fff !important;
+  font-family: Arial, sans-serif !important;
+  font-size: 16px !important;
+}
+
+/* Remove images, icons, and decorations */
+img, svg, canvas, video {
+  display: none !important;
+}
+
+/* Simplify text */
+.chat-window * {
+  text-shadow: none !important;
+  background: transparent !important;
+  color: #FFD700 !important; /* high contrast gold text */
+}
+
+/* Optional: enlarge text for readability */
+.chat-window * {
+  font-size: 18px !important;
+}
