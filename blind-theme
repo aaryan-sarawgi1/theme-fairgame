@@ -1,13 +1,11 @@
-/* === Blind Theme (Chat + Promote/Bias only) === */
+/* === Blind Theme: Blank Promote & Bias buttons === */
 
-/* Hide rankers list and ladder details */
-.rankers,
-.ladder,
+/* Hide ladder details and ranker text */
 .ladder-details,
+.rankers,
 .stats,
-.sidebar,
-.header,
-footer {
+.ladder-info,
+.ladder-text {
   display: none !important;
 }
 
@@ -23,20 +21,17 @@ footer {
   font-size: 16px !important;
 }
 
-/* Show promote and bias buttons */
+/* Buttons visible but completely blank */
 .promote-button,
 .bias-button {
   display: inline-block !important;
   visibility: visible !important;
-}
-
-/* Optional: simplify chat text */
-.username,
-.timestamp {
-  display: none !important;
-}
-
-.message {
-  color: #FFD700 !important; /* high contrast gold */
+  color: transparent !important;   /* hides text */
   text-shadow: none !important;
+}
+
+/* Remove any pseudo-content/icons */
+.promote-button::before,
+.bias-button::before {
+  content: none !important;
 }
