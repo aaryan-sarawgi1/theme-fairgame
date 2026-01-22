@@ -1,10 +1,13 @@
-/* Hide everything globally */
-body * {
+/* Hide top bar, side panels, ladders, stats */
+.header,
+.sidebar,
+.ladder,
+.stats,
+footer {
   display: none !important;
-  visibility: hidden !important;
 }
 
-/* Show only the chat window and messages */
+/* Keep chat visible */
 .chat-window,
 #messages,
 .message {
@@ -16,20 +19,16 @@ body * {
   font-size: 18px !important;
 }
 
-/* Hide usernames, timestamps, and buttons */
+/* Hide usernames, timestamps, buttons */
 .username,
 .timestamp,
 button,
-input,
-img,
-svg,
-canvas,
-video {
+input {
   display: none !important;
 }
 
 /* Pure text-only messages */
 .message {
-  color: #FFD700 !important; /* high contrast gold */
+  color: #FFD700 !important;
   text-shadow: none !important;
 }
