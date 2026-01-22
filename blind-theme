@@ -1,8 +1,12 @@
-/* Hide top bar, side panels, ladders, stats */
-.header,
-.sidebar,
+/* === Blind Theme (Chat + Promote/Bias only) === */
+
+/* Hide rankers list and ladder details */
+.rankers,
 .ladder,
+.ladder-details,
 .stats,
+.sidebar,
+.header,
 footer {
   display: none !important;
 }
@@ -16,19 +20,23 @@ footer {
   background: #000 !important;
   color: #fff !important;
   font-family: Arial, sans-serif !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 
-/* Hide usernames, timestamps, buttons */
+/* Show promote and bias buttons */
+.promote-button,
+.bias-button {
+  display: inline-block !important;
+  visibility: visible !important;
+}
+
+/* Optional: simplify chat text */
 .username,
-.timestamp,
-button,
-input {
+.timestamp {
   display: none !important;
 }
 
-/* Pure text-only messages */
 .message {
-  color: #FFD700 !important;
+  color: #FFD700 !important; /* high contrast gold */
   text-shadow: none !important;
 }
